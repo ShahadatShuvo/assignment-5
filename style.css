@@ -1,0 +1,401 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ########### Desktop styling ########  */
+
+.header {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgb(148, 135, 135, .25), rgba(0, 0, 0, .2)), url('./img/Background.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+
+/* ########### Utility Classes ###########  */
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.text {
+    color: rgba(255, 193, 120, 1);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: flex;
+}
+
+.text::before {
+    content: '';
+    flex: 1 1;
+    border-bottom: 2px solid rgba(255, 193, 120, 1);
+    margin: auto;
+    margin-right: 35px;
+}
+
+.image-box {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.image-box img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    margin-top: 2rem;
+}
+
+.btn a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #FFC178;
+}
+
+.btn a:hover {
+    font-size: 1.8rem;
+    transition: .5s;
+}
+
+
+/* ############ navbar styling ############  */
+
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 6.2rem;
+    padding: 1rem 0;
+}
+
+.nav-content {
+    width: 30%;
+}
+
+.navbar .div-1 h2 {
+    font-size: 2rem;
+}
+
+.navbar .div-2 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .div-2 li {
+    list-style-type: none;
+}
+
+.navbar .div-2 li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar .div-2 li a:hover {
+    color: #FFC178;
+    font-size: 1.8rem;
+    transition: .5s;
+}
+
+.navbar .div-3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: end;
+}
+
+.navbar .div-3 .Search:hover {
+    color: #FFC178;
+    font-size: 1.8rem;
+    transition: .5s;
+}
+
+.navbar .div-3 span {
+    margin-left: .5rem;
+}
+
+
+/* ## header-boby ##  */
+
+.header-body {
+    margin-top: 20vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-body .follow-us {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    writing-mode: vertical-lr;
+}
+
+.header-body .follow-us a {
+    color: white;
+}
+
+.header-body .text-content {
+    width: 80%;
+}
+
+.header-body .text-content .title {
+    width: 600px;
+}
+
+.header-body .text-content .title h1 {
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.header-body .text-content .title span {
+    font-weight: 800;
+}
+
+.header-body .text-content .scroll {
+    margin-top: 50px;
+    width: 600px;
+    text-align: center;
+}
+
+.header-body .text-content .scroll a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.header-body .text-content .scroll a:hover {
+    color: #FFC178;
+    font-size: 1.8rem;
+    transition: .5s;
+}
+
+
+/* ############# Content styling ###########  */
+
+.content {
+    background-color: black;
+    height: 340vh;
+}
+
+.flex-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* ############ holiday style ##########  */
+
+.holiday {
+    height: 80vh;
+    display: flex;
+}
+
+.box {
+    width: 50%;
+}
+
+.holiday .text-box {
+    color: white;
+    padding: 5rem;
+}
+
+.holiday .text-box .text {
+    width: 70%;
+}
+
+.holiday .text-box h2 {
+    font-size: 4rem;
+}
+
+.holiday .text-box p {
+    font-size: 1.5rem;
+}
+
+
+/* ########### about styling #########  */
+
+.about {
+    height: 80vh;
+    background: url('./img/Imge-2.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    position: relative;
+}
+
+.wrap {
+    width: 60%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrap .name {
+    color: rgba(255, 193, 120, 1);
+}
+
+.text-1::after {
+    content: '';
+    flex: 1 1;
+    border-bottom: 2px solid rgba(255, 193, 120, 1);
+    margin: auto;
+    margin-left: 35px;
+}
+
+.about h2 {
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about p {
+    color: white;
+    text-align: center;
+}
+
+.about .btn-1 {
+    text-align: center;
+}
+
+
+/* ########### footer style ##########  */
+
+.footer {
+    background: black;
+    height: 60vh;
+    /* border: 2px solid red; */
+}
+
+.clm-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .div-1 {
+    /* border: 2px solid green; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid white;
+}
+
+.footer .div-1 .sub-1 {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .div-1 .sub-1 span {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.sub-1 .btn-primary {
+    background: #FFA343;
+    border: none;
+    padding: 0 1.5rem;
+    height: 3.8rem;
+    border-radius: 10px;
+}
+
+.div-2 {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.div-2 .sub-1 h2 {
+    color: white;
+}
+
+.div-2 .sub-1 .email {
+    margin-top: 5rem;
+}
+
+.div-2 .sub-1 .Email {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.div-2 li {
+    list-style-type: none;
+}
+
+.clm-wrap .div-2 .color {
+    color: rgba(255, 209, 160, 1);
+}
+
+.clm-wrap .div-2 li a {
+    margin-bottom: .5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.f-nav {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.f-nav .policy {
+    display: flex;
+}
+
+.f-nav .policy li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.f-nav .logo-grp {
+    display: flex;
+}
+
+.f-nav .logo-grp a {
+    color: white;
+    font-size: 3rem;
+}
+
+.footer .copyright {
+    /* border: 2px solid red; */
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    height: 10%;
+}
